@@ -1,3 +1,5 @@
+package entities;
+
 public class PersonalInfo {
     private String name;
     private int currencyGlucose;
@@ -33,5 +35,16 @@ public class PersonalInfo {
 
     public int getInsulinUnit(){
         return insulinUnit;
+    }
+
+    @Override
+    public String toString() {
+        return "PersonalInfo{" +
+                "name='" + name + '\'' +
+                ", currencyGlucose=" + currencyGlucose +
+                ", time='" + time + '\'' +
+                ", age=" + age +
+                ", insulinUnit=" + insulinUnit +
+                '}';
     }
 }
